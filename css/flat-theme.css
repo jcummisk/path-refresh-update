@@ -73,12 +73,16 @@ body.flat ul.manage-links .has-children > a{
     margin:0;
     color:var(--inactive-text);
     font-weight: 400;
+<<<<<<< HEAD
+=======
+    letter-spacing: .1px;
+>>>>>>> 5b1dd5b62ad9f30c9218d740e703c47e19f04532
     border-radius: 0px;
 }
 body.flat ul.manage-links .has-children.active > a,
 body.flat ul.manage-links .has-children > a:hover{
     color:var(--hover-text);
-    font-weight: 400;
+    font-weight: 500;
     text-shadow: var(--text-shadow);
 }
 body.flat ul.manage-links .has-children:not(.active) > a:hover{
@@ -196,8 +200,12 @@ body.flat .cd-side-nav{
     background: var(--dark-color);
 }
 body.flat .has-children ul a:hover{
+<<<<<<< HEAD
     background: var(--active-color);
     font-weight: 500;
+=======
+    background: var(--light-color);
+>>>>>>> 5b1dd5b62ad9f30c9218d740e703c47e19f04532
 }
 body.flat .hidden-links li.has-children > a{
     background: var(--dark-color);
@@ -218,12 +226,11 @@ body.flat li.action-btn.manage-on button {
     color:var(--text);
 }
 body.flat li.action-btn button:hover{
-        border-color:var(--hover-color);
+    border-color:var(--hover-color);
     color:var(--text);
 }
 body.flat .cd-side-nav li a{
     font-size: 13.4px;
-/*    font-weight:bold;*/
 }
 body.flat .manage-links i{
     color:var(--icon-color);
@@ -246,6 +253,7 @@ body.flat .breadcrumbs h4 span{
 body.flat .cd-scrolling-container{
     width:500px;
 }
+<<<<<<< HEAD
 body.flat ul.manage-links > li > a.child-active,body.flat ul.manage-links > li > a{
     background: var(--dark-color);
     padding-right: 3px;
@@ -253,3 +261,5 @@ body.flat ul.manage-links > li > a.child-active,body.flat ul.manage-links > li >
 body.flat ul.manage-links > li > a:hover{
     font-weight: normal;
 }
+=======
+>>>>>>> 5b1dd5b62ad9f30c9218d740e703c47e19f04532
