@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <script src="js/jquery-2.1.4.js"></script>
+	<link rel="stylesheet" href="css/test.css"> <!-- CSS reset -->
+    </head>
+    <script>
+$(document).ready(function(){
+    $("footer a").click(function(e) {
+        e.preventDefault();
+        $("#maincontent").attr("src", $(this).attr("href"));
+    });
+    $( "a" ).click( function() {
+            var act = $(this).siblings();
+            $(this).addClass( "active" );
+            $(this).siblings().removeClass( "active" );
+});
+});
+    </script>
+<body>
+    <header><h3> Path Admin Refresh Prototoype</h3><span><a href="https://www.surveymonkey.com/r/VKBDQYM"  target="_blank">Continue to Survey  <i class="fas fa-caret-right"></i></a></span></header>
+<div class="intrinsic-container intrinsic-container-4x3">
+<iframe name="maincontent" id="maincontent" src="index.html" ></iframe> 
+    </div>
+    <footer><span></span><a class="active" href="index.html" target="maincontent"><i class="fas fa-desktop"></i> Prototype A</a><a href="index-mobile.html" target="maincontent"><i class="fas fa-mobile"></i> Protoype A</a>|<a href="light.html" target="maincontent"><i class="fas fa-desktop"></i> Prototype B</a></footer>
+</body>

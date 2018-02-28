@@ -1,0 +1,236 @@
+/* dark blue */
+
+:root{
+    --dark-color:#113753;
+    --gray-gradient:linear-gradient(to bottom, rgba(255,255,255,1), #ddddde);
+    --light-color:#2e4a5f;
+    --active-color:#2e4a5f;
+    --hover-text:#ffffff;
+    --inactive-text:#fafafa;
+    --text:#ffffff;
+    --bs-blue:#4681e2;
+    --icon-color:#6aa2ff;
+/*    --text-shadow:0px 0px 2px rgba(0,0,0,.3);*/
+}
+
+/* dark mono */
+/*
+:root{
+    --dark-color:#3d3d3d;
+    --gray-gradient:linear-gradient(to bottom, rgba(255,255,255,1), #ddddde);
+    --light-color:#313131;
+    --active-color:#282828;
+    --hover-text:#fafafa;
+    --inactive-text:#ddddde;
+    --text:#fff;
+    --bs-blue:#4681e2;
+}
+*/
+body.flat .manage-links{
+    border-radius:0;
+    background:var(--dark-color);
+}
+body.flat .cd-side-nav{
+    margin-left:0;
+    width:228px;
+    background: var(--dark-color);
+    color:var(--text);
+}
+body.flat .footer{
+    width: inherit;
+}
+body.flat ul.manage-links li a{
+    color:var(--inactive-text);
+    background: var(--light-color);
+}
+body.flat ul.manage-links li:first-child a{
+    border-radius: 0px;
+}
+body.flat .has-children ul a.child-active,
+body.flat .has-children ul a:hover.child-active{
+    background: var(--active-color);
+    color:var(--active-text);
+    font-weight: bold;
+    text-shadow: var(--text-shadow);
+}
+body.flat ul.manage-links li a{
+/*    color:#464646;  */
+}
+body.flat ul.manage-links .has-children > a{
+    background: var(--dark-color);
+    margin:0;
+    color:var(--inactive-text);
+    font-weight: 300;
+    letter-spacing: .2px;
+    border-radius: 0px;
+}
+body.flat ul.manage-links .has-children.active > a,
+body.flat ul.manage-links .has-children > a:hover{
+    color:var(--hover-text);
+    font-weight: 400;
+    text-shadow: var(--text-shadow);
+}
+body.flat ul.manage-links .has-children:not(.active) > a:hover{
+font-weight: 300;
+}
+body.flat .has-children ul{
+    background: var(--dark-color);
+}
+body.flat .has-children ul a,
+body.flat .cd-side-nav .active > a{
+    color:var(--hover-text);
+}
+body.flat.cd-side-nav .action-btn button{
+}
+body.flat .cd-side-nav .has-children > ul li{
+    background: var(--light-color);
+    color:var(--text);
+}
+body.flat.cd-top-nav > li a{
+    padding:0.3em;
+}
+body.flat.cd-side-nav > ul > li > a{
+    padding: 10px 10px 10px 42px;
+}
+
+body.flat .cd-main-header{
+    min-width:925px;
+    width:100%;
+    float: right;
+    right: 0;
+    left:auto;
+}
+body.flat .cd-side-nav .has-children:not(.active):hover > ul{
+   padding-left: 0;
+    background: var(--light-color);
+    z-index: -999999;
+    box-shadow: 2px 0px 1px rgba(0,0,0,.1);
+    margin-left: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+body.flat ul.manage-links .has-children:not(.active):hover > a{
+    color:var(--hover-text);
+}
+body.flat ul.manage-links .has-children .active > a{
+    color:var(--hover-text);
+}
+body.flat .cd-side-nav .has-children:not(.active):hover > ul li:first-child,
+body.flat .cd-side-nav .has-children:not(.active):hover > ul li,
+body.flat .cd-side-nav .has-children:not(.active):hover > ul li:last-child{
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-top:0px solid transparent;
+    border-bottom:0px solid transparent;
+}
+body.flat .cd-side-nav > ul > li.active a::before,
+body.flat .cd-side-nav > ul > li a:hover::before{
+  background: url(../img/cd-nav-icons-dark.svg) no-repeat 0 0;
+}
+body.flat .cd-side-nav > ul > li a::before{
+  background: url(../img/cd-nav-icons-blue.svg) no-repeat 0 0;
+}
+
+body.flat .cd-side-nav > ul > li.overview > a::before {
+  background-position: -64px 0;
+}
+body.flat .cd-side-nav > ul > li.notifications > a::before{
+  background-position: -80px 0;
+}
+body.flat .cd-side-nav > ul > li.comments > a::before {
+  background-position: -48px 0;
+}
+body.flat .cd-side-nav > ul > li.bookmarks > a::before {
+  background-position: -32px 0;
+}
+body.flat .cd-side-nav > ul > li.images > a::before {
+  background-position: 0 0;
+}
+body.flat .cd-side-nav > ul > li.users > a::before {
+  background-position: -16px 0;
+}
+body.flat .cd-side-nav > ul > li.commerce > a::before {
+  background-position: -16px 0;
+}
+body.flat .cd-side-nav > ul > li.userss > a::before {
+  background-position: -95px 0;
+}
+body.flat .cd-side-nav > ul > li.plan > a::before {
+  background-position: -112px 0;
+}
+body.flat .cd-side-nav > ul > li.bulkupload > a::before {
+  background-position: -130px 0;
+}
+body.flat .cd-side-nav > ul > li.integrations > a::before {
+  background-position: -145px 0;
+}
+body.flat .cd-side-nav li .count{
+    color:var(--inactive-text);
+}
+body.flat .cd-side-nav li.active .count-down{
+    color:var(--active-text);
+}
+body.flat .has-children ul a:hover,
+body.flat .has-children ul a:active, body.flat .has-children ul a:focus{
+    color:var(--hover-color);
+    background:var(---color); 
+}
+body.flat .content-wrapper{
+    margin-top:55px;
+    width:1036px;
+    image-rendering: crisp-edges;
+    margin-right: 0px;
+}
+body.flat .cd-side-nav{
+    background: var(--dark-color);
+}
+body.flat .has-children ul a:hover{
+        background: var(--light-color);
+}
+body.flat .hidden-links li.has-children > a{
+    background: var(--dark-color);
+}
+body.flat ul.footer{
+    background: var(--dark-color);
+}
+body.flat .hidden-links li.has-children > a{
+    border:none;
+    background: var(--light-color);
+    color:var(--inactive-text);
+}
+body.flat ul.hidden-links .cd-label{
+    color:var(--text);
+}
+body.flat li.action-btn.manage-on button {
+    border-color:var(--text);
+    color:var(--text);
+}
+body.flat li.action-btn button:hover{
+        border-color:var(--hover-color);
+    color:var(--text);
+}
+body.flat .cd-side-nav li a{
+    font-size: 13.4px;
+/*    font-weight:bold;*/
+}
+body.flat .manage-links i{
+    color:var(--icon-color);
+}
+body.flat .breadcrumbs{
+    height: 90px;
+    float: right;
+    right: 0;
+    display: block;
+    position: relative;
+    width: 83%;
+    background: var(--light-color);
+}
+body.flat .breadcrumbs h4{
+    color:var(--text);
+}
+body.flat .breadcrumbs h4 span{
+    color:var(--active-text);
+}
+body.flat .cd-scrolling-container{
+    width:500px;
+}
