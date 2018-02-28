@@ -3,227 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<link rel="stylesheet" href="css/light-theme.css"> <!-- Resource style -->
-	<link rel="stylesheet" href="css/flat-theme.css"> <!-- Resource style -->
     <script src="js/jquery-2.1.4.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-	<script src="js/modernizr.js" type="text/javascript"></script> <!-- Modernizr -->  	
-	<script src="js/manage-links.js" type="text/javascript"></script> <!-- Modernizr -->  	
-<script>
-</script>
-</head>
-<body class="flat">
-<!--    Light Theme-->
-
-	<header class="cd-main-header">
-
-<!--		<a href="#0" class="cd-logo"><i class="fas fa-cloud"></i></a>-->
-        
-<!--        <a href="#0" class="cd-logo" id="switch-accounts" ><i class="fas fa-cloud"></i> </a>-->
-<a href="#0" class="cd-logo active-tab" id="admin"><i class="fas fa-wrench"></i> Admin</a>
-		<a href="#0" class="cd-nav-trigger">Menu<span></span></a>
-		<nav class="cd-nav" style="">
-			<ul class="cd-top-nav" style="vertical-align: middle">
-                <li class="float-left"><a href="#0"><i class="fas fa-home"></i> Showroom</a></li>
-                 <li class="float-left"><a href="#0"><i class="fas fa-calendar"></i> Events <i class="fas fa-caret-down"></i></a></li>
-                   <li class="float-left"><a href="#0"><i class="fas fa-book"></i> Courses</a></li>
-                     <li class="float-left"><a href="#0"><i class="fas fa-desktop"></i> Content library</a></li>
-                    <li class="float-left"><a href="#0"><i class="fas fa-search"></i> Search</a></li>
-
-                <li class="float-right"><a href="#0"><i class="fas fa-sign-out-alt"></i>		</a></li>
-				<li class="float-right"><a href="#0">
-<i class="fas fa-user"></i> Account</a></li>
-				<li class="float-right"><a href="#0"><i class="fas fa-shopping-cart"></i>		Cart</a></li>
-			</ul>
-		</nav>
-	</header> <!-- .cd-main-header -->
-
-	<main class="cd-main-content">
-<div class="overlay">
-        <ul class="org-select">
-<li class="accnts cd-label">Switch Accounts</li>
-<li class="accts">Showroom<i class="fas fa-caret-down"></i></li>
-<!--<li>Sub-org</li>-->
-</ul>
+	<link rel="stylesheet" href="css/test.css"> <!-- CSS reset -->
+    </head>
+    <script>
+$(document).ready(function(){
+    $("footer a").click(function(e) {
+        e.preventDefault();
+        $("#maincontent").attr("src", $(this).attr("href"));
+    });
+    $( "a" ).click( function() {
+            var act = $(this).siblings();
+            $(this).addClass( "active" );
+            $(this).siblings().removeClass( "active" );
+});
+});
+    </script>
+<body>
+    <header><h3> Path Admin Refresh Prototoype</h3><span><a href="https://www.surveymonkey.com/r/VKBDQYM"  target="_blank">Continue to Survey  <i class="fas fa-caret-right"></i></a></span></header>
+<div class="intrinsic-container intrinsic-container-4x3">
+<iframe name="maincontent" id="maincontent" src="prototype-a.html" ></iframe> 
     </div>
-        <div class="cd-scrolling-container">
-            
-		<nav class="cd-side-nav" style="background:">
-        
-		<ul class="manage-links connectedSortable droptrue" id="desktop">
-				<li class="has-children overview active">
-					<a href="#0" id="dashboard">Dashboards<span class="count"><i class="fa fa-angle-right"></i></span><span class="count-down"><i class="fa fa-angle-down"></i></span></a>
-					<ul>
-						<li class=""><a href="#0">System Dashboard</a></li>
-						<li><a href="#0">Create new dashboard <i class="fa fa-plus-square" style="float:right"></i></a></li>
-					</ul>
-				</li>
-				<li class="has-children notifications">
-					<a href="#0" id="reports">Reports<span class="count"><i class="fa fa-angle-right"></i></span><span class="count-down"><i class="fa fa-angle-down"></i></span></a>
-					<ul>
-						<li><a href="#0" id="click-drilldown">Users</a></li>
-						<li class="drilldown" id="drilldown"><i class="fas fa-user-circle"></i>Jane Doe</li>
-						<li><a href="#0">Events</a></li>
-						<li><a href="#0">Event Presentations</a></li>
-						<li><a href="#0">Courses</a></li>
-						<li><a href="#0">Course Presentations</a></li>
-						<li><a href="#0">Assessments</a></li>
-						<li><a href="#0">Surveys</a></li>
-						<li><a href="#0">Live Web Events</a></li>
-						<li><a href="#0">In-Person Events</a></li>
-						<li><a href="#0">Certificates</a></li>
-						<li><a href="#0">Other Items</a></li>
-						<li><a href="#0">Credits Issued</a></li>
-						<li><a href="#0">Assignments</a></li>
-						<li><a href="#0">Evternal Activity</a></li>
-
-					</ul>
-				</li>
-
-				<li class="has-children comments">
-					<a href="#0" id="settings">General<span class="count"><i class="fa fa-angle-right"></i></span><span class="count-down"><i class="fa fa-angle-down"></i></span></a>
-					
-					<ul>
-						<li><a href="#0">Settings</a></li>
-						<li><a href="#0">Themes</a></li>
-						<li><a href="#0">Webinar Providers</a></li>
-					</ul>
-				</li>
-<!--				<li class="cd-label">Secondary</li>-->
-				<li class="has-children bookmarks">
-					<a href="#0" id="groups">Groups</a>
-					
-				</li>
-				<li class="has-children images">
-					<a href="#0" id="templates">Templates<span class="count"><i class="fa fa-angle-right"></i></span><span class="count-down"><i class="fa fa-angle-down"></i></span></a>
-					
-					<ul>
-                         <li><a href="#0">Certificate Template Settings</a></li>
- <li><a href="#0">Survey Template Settings</a></li>
- <li><a href="#0">Assessment Pool Settings</a></li>
- <li><a href="#0">Email Template Settings</a></li>
- <li><a href="#0">Content Prompt Settings</a></li>
-					</ul>
-				</li>
-
-				<li class="has-children commerce">
-					<a href="#0" id="commerce">Commerce<span class="count"><i class="fa fa-angle-right"></i></span><span class="count-down"><i class="fa fa-angle-down"></i></span></a>
-					
-					<ul>
-                    <li><a href="#0">Overview</a></li>
-                    <li><a href="#0">Sales</a></li>
-                    <li><a href="#0">Content</a></li>
-                    <li><a href="#0">Refunds</a></li>
-                    <li><a href="#0">Unpaid Invoices</a></li>
-                    <li><a href="#0">Failed Transactions</a></li>
-                    <li><a href="#0">Merchant</a></li>
-                    <li><a href="#0">Product Catalog</a></li>
-                    <li><a href="#0">Coupons</a></li>
-                    <li><a href="#0">Discounts</a></li>
-                    <li><a href="#0">Manual Orders</a></li>
-                    <li><a href="#0">Credit Balances</a></li>
-				
-					</ul>
-				</li>
-                	<li class="has-children userss">
-					<a href="#0" id="users">Users<span class="count"><i class="fa fa-angle-right"></i></span><span class="count-down"><i class="fa fa-angle-down"></i></span></a>
-					
-					<ul>
-						<li><a href="#0">User Settings</a></li>
-						<li><a href="#0">Registration Questions</a></li>
-						<li><a href="#0">Bulk User Import</a></li>
-						<li><a href="#0">External User Activity Import</a></li>
-						<li><a href="#0">Contributors</a></li>
-					</ul>
-				</li>
-                	<li class="has-children plan">
-					<a href="#0" id="plan">Plan</a>
-				</li>
-                	<li class="has-children bulkupload">
-					<a href="#0" id="bulkupload">Bulk Upload<span class="count"><i class="fa fa-angle-right"></i></span><span class="count-down"><i class="fa fa-angle-down"></i></span></a>
-					
-					<ul>
-						<li><a href="#0">Video</a></li>
-						<li><a href="#0">Audio</a></li>
-						<li><a href="#0">Slides</a></li>
-						<li><a href="#0">Assessments</a></li>
-						<li><a href="#0">Assessment Questions</a></li>
-					</ul>
-				</li>
-<!--
-                		<li class="has-children integrations hidden">
-					<a href="#0">Integrations</a>
-				</li>
--->
-			</ul>
-            <ul class="mobile-false" id="mobile-switch">
-            <li class="has-children overview active">
-					<a href="#0" id="default"></a>
-					
-				</li>
-				<li class="has-children notifications">
-					<a href="#0" id="reports"></a>
-				</li>
-
-				<li class="has-children comments">
-					<a href="#0" id="settings"></a>
-				</li>
-<!--				<li class="cd-label">Secondary</li>-->
-				<li class="has-children bookmarks">
-					<a href="#0" id="groups"></a>
-					
-				</li>
-				<li class="has-children images">
-					<a href="#0" id="templates"></a>
-				</li>
-
-				<li class="has-children commerce">
-					<a href="#0" id="commerce"></a>
-				</li>
-                	<li class="has-children userss">
-					<a href="#0" id="users"></a>
-				</li>
-                	<li class="has-children plan">
-					<a href="#0" id="plan"></a>
-				</li>
-                	<li class="has-children bulkupload">
-					<a href="#0" id="bulkupload"></a>
-				</li>
-     </ul>
-
-			<ul class="footer" style="">
-<!--				<li class="cd-label">Manage Links</li>-->
-				<li class="action-btn"><button><i class="fas fa-cog"></i> Manage Links</button></li>
-			
-        <ul class="hidden-links" style="bottom: 0;position: relative;background: inherit;padding-bottom: 20px">
- <li class="cd-label disabled"><i class="fas fa-arrow-down" style="float:right"></i>hidden links</li>
-            <ul class="connectedSortable ui-sortable droptrue show" id="sortable2">
-            <li class="has-children integrations ui-state-disabled" id="integrations">
-<!--                <i class="fas fa-arrow-circle-down"></i> Drag to hide items-->
-                </li>
-				</ul
-                ></ul></ul>
-		</nav>
-</div>
-<!--
-    <li class="themes"><button id="light-on"><span><i class="fas fa-adjust"></i> switch theme</span></button>
-</li>
-        <li class="views"><button id="mobile-btn"><span> <i class="fas fa-columns"></i></span></button></li>
--->
-<!--<div class="breadcrumbs"><h4>Dashboards > <span>System Dashboard</span></h4></div>-->
-		<div class="content-wrapper dashboard" style="margin:text-align:center;">
-            <div class="frame"></div>
-         
-<!--<img src="img/dashboard.png">-->
-        </div> <!-- .content-wrapper -->
-	</main> <!-- .cd-main-content -->
-<!--<script src="js/jquery-2.1.4.js"></script>-->
-<!--<script src="js/jquery.menu-aim.js"></script>-->
-<!--<script src="js/main.js"></script>  Resource jQuery -->
+    <footer><span></span><a class="active" href="prototype-a.html" target="maincontent"><i class="fas fa-desktop"></i> Prototype A</a><a href="index-mobile.html" target="maincontent"><i class="fas fa-mobile"></i> Protoype A</a>|<a href="light.html" target="maincontent"><i class="fas fa-desktop"></i> Prototype B</a></footer>
 </body>
-</html>
