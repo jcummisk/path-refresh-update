@@ -1,14 +1,15 @@
 /* base -do not touch */
-/*
+
 :root{
     --dark-color:#24435a;
     --light-color:#3c6a90;
     --active-color:#4681e2;
     --hover-text:#ffffff;
-    --text:#ffffff;
+    --text:#dedede;
 }
-*/
+
 /* dark blue */
+/*
 
 :root{
     --dark-color:#113753;
@@ -21,6 +22,7 @@
     --bs-blue:#4681e2;
     --icon-color:#6aa2ff;
 }
+*/
 
 
 /* dark mono */
@@ -59,7 +61,7 @@ body.flat ul.manage-links li:first-child a{
 body.flat .has-children ul a.child-active,
 body.flat .has-children ul a:hover.child-active{
     background: var(--active-color);
-    color:var(--active-text);
+    color:var(--hover-text);
     font-weight: 500;
     text-shadow: var(--text-shadow);
     width: auto;
@@ -73,10 +75,6 @@ body.flat ul.manage-links .has-children > a{
     margin:0;
     color:var(--inactive-text);
     font-weight: 400;
-<<<<<<< HEAD
-=======
-    letter-spacing: .1px;
->>>>>>> 5b1dd5b62ad9f30c9218d740e703c47e19f04532
     border-radius: 0px;
 }
 body.flat ul.manage-links .has-children.active > a,
@@ -200,12 +198,9 @@ body.flat .cd-side-nav{
     background: var(--dark-color);
 }
 body.flat .has-children ul a:hover{
-<<<<<<< HEAD
-    background: var(--active-color);
+    color:var(--hover-text);
     font-weight: 500;
-=======
     background: var(--light-color);
->>>>>>> 5b1dd5b62ad9f30c9218d740e703c47e19f04532
 }
 body.flat .hidden-links li.has-children > a{
     background: var(--dark-color);
@@ -253,7 +248,6 @@ body.flat .breadcrumbs h4 span{
 body.flat .cd-scrolling-container{
     width:500px;
 }
-<<<<<<< HEAD
 body.flat ul.manage-links > li > a.child-active,body.flat ul.manage-links > li > a{
     background: var(--dark-color);
     padding-right: 3px;
@@ -261,5 +255,3 @@ body.flat ul.manage-links > li > a.child-active,body.flat ul.manage-links > li >
 body.flat ul.manage-links > li > a:hover{
     font-weight: normal;
 }
-=======
->>>>>>> 5b1dd5b62ad9f30c9218d740e703c47e19f04532
