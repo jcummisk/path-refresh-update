@@ -60,18 +60,18 @@ body.flat ul.manage-links .has-children > a{
     background: var(--dark-color);
     margin:0;
     color:var(--inactive-text);
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: .2px;
     border-radius: 0px;
 }
 body.flat ul.manage-links .has-children.active > a,
 body.flat ul.manage-links .has-children > a:hover{
     color:var(--hover-text);
-    font-weight: 400;
+    font-weight: 500;
     text-shadow: var(--text-shadow);
 }
 body.flat ul.manage-links .has-children:not(.active) > a:hover{
-font-weight: 300;
+font-weight: 400;
 }
 body.flat .has-children ul{
     background: var(--dark-color);
