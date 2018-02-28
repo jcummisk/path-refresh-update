@@ -61,7 +61,7 @@ body.flat ul.manage-links .has-children > a{
     margin:0;
     color:var(--inactive-text);
     font-weight: 400;
-    letter-spacing: .2px;
+    letter-spacing: .1px;
     border-radius: 0px;
 }
 body.flat ul.manage-links .has-children.active > a,
@@ -185,7 +185,7 @@ body.flat .cd-side-nav{
     background: var(--dark-color);
 }
 body.flat .has-children ul a:hover{
-        background: var(--light-color);
+    background: var(--light-color);
 }
 body.flat .hidden-links li.has-children > a{
     background: var(--dark-color);
@@ -206,12 +206,11 @@ body.flat li.action-btn.manage-on button {
     color:var(--text);
 }
 body.flat li.action-btn button:hover{
-        border-color:var(--hover-color);
+    border-color:var(--hover-color);
     color:var(--text);
 }
 body.flat .cd-side-nav li a{
     font-size: 13.4px;
-/*    font-weight:bold;*/
 }
 body.flat .manage-links i{
     color:var(--icon-color);
