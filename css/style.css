@@ -180,8 +180,6 @@ background:#fff;
 .cd-logo {
   float: left;
   display: block;
-color:#fff;
-    background: #33383e;
 /*  margin: 11px 0 0 5%;*/
 }
 .cd-logo img {
@@ -574,7 +572,7 @@ Sidebar
   transform: translateY(-50%);
   height: 16px;
   width: 16px;
-  background: url(../img/cd-nav-icons.svg) no-repeat 0 0;
+  background: url(../img/cd-nav-icons.svg) no-repeat -155px 0;
     }
  .cd-side-nav ul.hidden-links li.overview > a::before, .cd-side-nav > ul > li.overview > a::before {
   background-position: -64px 0;
