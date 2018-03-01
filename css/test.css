@@ -16,11 +16,14 @@ h1, h2, h3, h4, span, footer{
     display: inline-block;
 }
 header h3, header h4{
-    color:#444;
+    color: #a0a0a0;
     float: left;
+    padding-top: 6px;
     text-align: left;
     vertical-align: middle;
     margin: auto;
+    font-size: 13px;
+    text-transform: unset;
 }
 header span a{
     color:#fff;
