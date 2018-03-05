@@ -13,7 +13,18 @@ Primary style
 *, *::after, *::before {
   box-sizing: border-box;
 }
-
+span.tooltiptext{
+    background:rgba(26, 26, 26, 0.81);
+    color:#fff;
+    padding: 10px;
+    opacity: 0;
+    font-size: 14px;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+header:hover span.tooltiptext{
+opacity: 1;
+}
 html {
   font-size: 62.5%;
 }
@@ -444,11 +455,11 @@ height: 55px;
   }
 }
   .cd-top-nav li:not(.has-children) a:hover{
-      color: #1784c7;
+      color: #a0a0a0;
   }
     
   .cd-top-nav li:not(.has-children) a:active {
-    color: #03619b;
+    color: #a0a0a0;
 }
 
 /* -------------------------------- 

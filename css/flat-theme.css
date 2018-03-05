@@ -38,6 +38,18 @@
     --bs-blue:#4681e2;
 }
 */
+body.flat span.tooltiptext{
+    background:rgba(26, 26, 26, 0.81);
+    color:#fff;
+    padding: 10px;
+    opacity: 0;
+    font-size: 14px;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+body.flat header:hover span.tooltiptext{
+opacity: 1;
+}
 body.flat .manage-links{
     border-radius:0;
     background:var(--dark-color);
