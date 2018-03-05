@@ -444,7 +444,7 @@ height: 55px;
   }
 }
   .cd-top-nav li:not(.has-children) a:hover{
-      color: #1784c7;
+      color: #a0a0a0;
   }
     
   .cd-top-nav li:not(.has-children) a:active {
